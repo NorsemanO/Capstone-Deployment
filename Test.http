@@ -1,0 +1,27 @@
+POST http://172.31.55.240:80/predict
+Content-Type: application/json
+
+{"inputs":[-1, 0.5, 1, 0, 1, -1, 1, 0, 0.5]}
+
+###
+# curl -X POST --location "http://192.168.2.25:5000/predict" -H "Content-Type: application/json" -d '{"inputs":[-1, 0.5, 1, 0, 1, -1, 1, 0, 0.5]}'
+POST http://192.168.2.25:80/predict
+Content-Type: application/json
+
+{
+"inputs": [
+1,0.56,1,0,1,0,1,-1,0.63
+]
+}
+
+###
+
+POST http://192.168.2.25:5000/predict
+Content-Type: application/json
+
+{
+  "inputs": [
+    -0.33,0.67,0,0,0,-1,0.8,-1,0.44
+  ]
+}
+###
